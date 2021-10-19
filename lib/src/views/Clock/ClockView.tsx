@@ -279,7 +279,7 @@ export function ClockView<TDate>(props: ClockViewProps<TDate>) {
   ]);
 
   return (
-    <React.Fragment>
+    <>
       {showViewSwitcher && (
         <ArrowSwitcher
           className={classes.arrowSwitcher}
@@ -310,7 +310,7 @@ export function ClockView<TDate>(props: ClockViewProps<TDate>) {
         handleMeridiemChange={handleMeridiemChange}
         {...viewProps}
       />
-    </React.Fragment>
+    </>
   );
 }
 

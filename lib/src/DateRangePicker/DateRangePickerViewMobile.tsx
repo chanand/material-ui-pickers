@@ -51,7 +51,7 @@ export function DateRangePickerViewMobile<TDate>(props: DesktopDateRangeCalendar
   const maxDate = __maxDate || utils.date(defaultMaxDate);
 
   return (
-    <React.Fragment>
+    <>
       <CalendarHeader
         view="date"
         views={onlyDateView}
@@ -83,6 +83,6 @@ export function DateRangePickerViewMobile<TDate>(props: DesktopDateRangeCalendar
           })
         }
       />
-    </React.Fragment>
+    </>
   );
 }

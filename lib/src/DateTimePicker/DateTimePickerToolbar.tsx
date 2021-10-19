@@ -84,7 +84,7 @@ export const DateTimePickerToolbar: React.FC<ToolbarComponentProps> = withDefaul
     }, [date, toolbarFormat, toolbarPlaceholder, utils]);
 
     return (
-      <React.Fragment>
+      <>
         {wrapperVariant !== 'desktop' && (
           <PickerToolbar
             toolbarTitle={toolbarTitle}
@@ -143,7 +143,7 @@ export const DateTimePickerToolbar: React.FC<ToolbarComponentProps> = withDefaul
             onChange={setOpenView}
           />
         )}
-      </React.Fragment>
+      </>
     );
   }
 );

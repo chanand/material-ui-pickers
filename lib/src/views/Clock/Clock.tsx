@@ -210,7 +210,7 @@ export function Clock<TDate>(props: ClockProps<TDate>) {
           onMouseMove={handleMouseMove}
         />
         {!isSelectedTimeDisabled && (
-          <React.Fragment>
+          <>
             <div className={classes.pin} />
             {date && (
               <ClockPointer
@@ -222,12 +222,12 @@ export function Clock<TDate>(props: ClockProps<TDate>) {
                 aria-label={`Selected time ${utils.format(date, 'fullTime')}`}
               />
             )}
-          </React.Fragment>
+          </>
         )}
         {numbersElementsArray}
       </div>
       {ampm && (wrapperVariant === 'desktop' || ampmInClock) && (
-        <React.Fragment>
+        <>
           <IconButton
             data-mui-test="in-clock-am-btn"
             onClick={() => handleMeridiemChange('am')}
@@ -248,7 +248,7 @@ export function Clock<TDate>(props: ClockProps<TDate>) {
           >
             <Typography variant="caption">PM</Typography>
           </IconButton>
-        </React.Fragment>
+        </>
       )}
     </div>
   );

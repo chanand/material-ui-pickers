@@ -78,12 +78,12 @@ const DateTimePickerTabs: React.FC<DateTimePickerTabsProps> = (props) => {
         <Tab
           value="date"
           aria-label="pick date"
-          icon={<React.Fragment>{dateRangeIcon}</React.Fragment>}
+          icon={<>{dateRangeIcon}</>}
         />
         <Tab
           value="time"
           aria-label="pick time"
-          icon={<React.Fragment>{timeIcon}</React.Fragment>}
+          icon={<>{timeIcon}</>}
         />
       </Tabs>
     </Paper>

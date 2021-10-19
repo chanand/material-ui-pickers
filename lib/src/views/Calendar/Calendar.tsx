@@ -169,7 +169,7 @@ export function Calendar<TDate>(props: CalendarProps<TDate>) {
     .map((selectedDateItem) => selectedDateItem && utils.startOfDay(selectedDateItem));
 
   return (
-    <React.Fragment>
+    <>
       <div className={classes.daysHeader}>
         {utils.getWeekdays().map((day, i) => (
           <Typography
@@ -238,7 +238,7 @@ export function Calendar<TDate>(props: CalendarProps<TDate>) {
           </div>
         </SlideTransition>
       )}
-    </React.Fragment>
+    </>
   );
 }
 

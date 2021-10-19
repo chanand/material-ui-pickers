@@ -135,7 +135,7 @@ export function CalendarHeader<TDate>(props: CalendarHeaderProps<TDate>) {
   };
 
   return (
-    <React.Fragment>
+    <>
       <div className={classes.root}>
         <div className={classes.monthTitleContainer} onClick={toggleView}>
           <FadeTransitionGroup
@@ -196,7 +196,7 @@ export function CalendarHeader<TDate>(props: CalendarHeaderProps<TDate>) {
           />
         </Fade>
       </div>
-    </React.Fragment>
+    </>
   );
 }
 

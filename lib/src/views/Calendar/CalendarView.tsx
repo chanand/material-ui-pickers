@@ -133,7 +133,7 @@ export function CalendarView<TDate>(props: CalendarViewProps<TDate>) {
   }, [date]); // eslint-disable-line
 
   return (
-    <React.Fragment>
+    <>
       <CalendarHeader
         {...other}
         view={view}
@@ -194,6 +194,6 @@ export function CalendarView<TDate>(props: CalendarViewProps<TDate>) {
           )}
         </div>
       </FadeTransitionGroup>
-    </React.Fragment>
+    </>
   );
 }
